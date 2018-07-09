@@ -5,7 +5,7 @@
 
 platform :osx, '10.9'
 
-target 'mas' do
+target 'MasKit' do
   # Building swift pods statically since executable doesn't have a bundle.
   # use_frameworks!
   use_modular_headers!
@@ -13,7 +13,7 @@ target 'mas' do
   pod 'Commandant', git: "https://github.com/phatblat/Commandant.git", branch: "cocoapods"
   pod 'Result'
 
-  target 'mas-tests' do
+  target 'MasKitTests' do
     platform :osx, '10.10'
     inherit! :search_paths
 
